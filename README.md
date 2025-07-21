@@ -6,12 +6,12 @@ This portfolio showcases my practical experience through academic projects and r
 
 Core Skills:
 
-Languages: Vietnamese (Native), English (Intermediate – able to understand technical documentation)
+- Languages: Vietnamese (Native), English (Intermediate – able to understand technical documentation)
 
-Technical: Functional, Regression, and Smoke Testing, API Testing (Postman), UI Testing (DevTools), Test Case Design, Requirement Analysis (SRS, URD), Web & Mobile Testing
+- Technical: Functional, Regression, and Smoke Testing, API Testing (Postman), UI Testing (DevTools), Test Case Design, Requirement Analysis (SRS, URD), Web & Mobile Testing
 
-Tools & Technologies: Postman, Chrome DevTools, HTML, CSS, JavaScript, PHP Laravel, MS SQL Server
+- Tools & Technologies: Postman, Chrome DevTools, HTML, CSS, JavaScript, PHP Laravel, MS SQL Server
 
-Soft Skills: SDLC & STLC understanding, teamwork, problem-solving, communication
+- Soft Skills: SDLC & STLC understanding, teamwork, problem-solving, communication
 
 Feel free to explore the repository to see how I apply QA principles in practice. I'm always eager to learn and contribute to building reliable, user-friendly software.
