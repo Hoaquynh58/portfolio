@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "25b9a062-00fe-4c07-8297-1b639131e200",
+		"name": "HDBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7797769"
+	},
+	"item": [
+		{
+			"name": "Post tiền tệ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"buyer",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"001\",\r\n\t\t\t\"branchCode\":\"001\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": null,\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 & ,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"01\",\r\n\t\t\t\"processdate\": \"2022-12-27\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"20221227010000000000004\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Batch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"0104128565-998\",\r\n\t\t\t\"branchCode\":\"0104128565-998\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"61002324789\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n            \"curr\": \"USD\",\r\n            \"exrt\": 24390,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2023-11-04\",\r\n\t\t\t\"vatr\": 10,\r\n            \"note\": \"\",\r\n            \"note1\": \"\",\r\n            \"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t  {\r\n                \"transno\": \"BT8787200905\",\r\n                \"transdate\": \"2023-11-04T12:11:00\",\r\n                \"name\": \"Phi SMSBanking ky 09/2023- SDT: ****DN-NHAN TBBD SO DU QUA SMS\",\r\n                \"unit\": \"USD\",\r\n                \"total\": 2,\r\n                \"vatr\": 10,\r\n                \"vata\": 0.2,\r\n                \"amount\": 2\r\n    }\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.14.122.40:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"14",
+						"122",
+						"40"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Lấy ngay PGD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"018\",\r\n\t\t\t\"branchCode\":\"018\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": null,\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"01\",\r\n\t\t\t\"processdate\": \"2024-05-28\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"20240529HDGTGT/3001\",\r\n\t\t\t\t\t\"transdate\": \"2024-05-28 09:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null, \r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.14.122.40:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"14",
+						"122",
+						"40"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Lấy ngay CN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"002\",\r\n\t\t\t\"branchCode\":\"002\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": null,\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"01\",\r\n\t\t\t\"processdate\": \"2024-05-28\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"20240529CNHDGTGT/1003\",\r\n\t\t\t\t\t\"transdate\": \"2024-05-28 09:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null, \r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.14.122.40:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"14",
+						"122",
+						"40"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Batch ngày 1 lần",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"018\",\r\n\t\t\t\"branchCode\":\"018\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": null,\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2024-05-24\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"20240523HDGTGTBATCH/017\",\r\n\t\t\t\t\t\"transdate\": \"2024-05-24 09:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null, \r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.14.122.40:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"14",
+						"122",
+						"40"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Batch tháng 2 lần",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"005\",\r\n\t\t\t\"branchCode\":\"005\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695341\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"054\",\r\n\t\t\t\"branchCode\":\"054\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695342\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"077\",\r\n\t\t\t\"branchCode\":\"077\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695343\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"182\",\r\n\t\t\t\"branchCode\":\"182\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695344\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"090\",\r\n\t\t\t\"branchCode\":\"090\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695345\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"233\",\r\n\t\t\t\"branchCode\":\"233\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00069534\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_000695346\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post giao dich Batch tháng 3 lần",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n\t\"invs\": [\r\n\t\t{\r\n\t\t\t\"systemCode\":\"005\",\r\n\t\t\t\"branchCode\":\"005\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107191\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"054\",\r\n\t\t\t\"branchCode\":\"054\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107192\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"077\",\r\n\t\t\t\"branchCode\":\"077\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107193\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"182\",\r\n\t\t\t\"branchCode\":\"182\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107194\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"090\",\r\n\t\t\t\"branchCode\":\"090\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107195\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n        {\r\n\t\t\t\"systemCode\":\"233\",\r\n\t\t\t\"branchCode\":\"233\",\r\n\t\t\t\"source\": \"SYMBOLS\",\r\n\t\t\t\"type\": \"01GTKT\",\r\n\t\t\t\"bcode\": \"00110719\",\r\n\t\t\t\"bname\": \"VI THI THA** ****\",\r\n\t\t\t\"buyer\": null,\r\n\t\t\t\"btax\": null,\r\n\t\t\t\"bacc\": \"005704005004402\",\r\n\t\t\t\"baddr\": \"17.10 T18 ** **,** *,***,**** *****, *****\",\r\n\t\t\t\"adjtype\": 0,\r\n\t\t\t\"reftrans\": null,\r\n\t\t\t\"acctype\": \"2\",\r\n\t\t\t\"curr\": \"VND\",\r\n\t\t\t\"exrt\": 1.0,\r\n\t\t\t\"paym\": \"TM/CK\",\r\n\t\t\t\"invm\": \"02\",\r\n\t\t\t\"processdate\": \"2022-05-01\",\r\n\t\t\t\"vatr\": 10,\r\n\t\t\t\"note\": \"\",\r\n\t\t\t\"note1\": \"\",\r\n\t\t\t\"note2\": \"\",\r\n\t\t\t\"items\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"transno\": \"2022060300000000011_001107196\",\r\n\t\t\t\t\t\"transdate\": \"2019-09-01 12:10:00\",\r\n\t\t\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\t\t\"quantity\": 1.0,\r\n\t\t\t\t\t\"price\": null,\r\n\t\t\t\t\t\"unit\": null,\r\n\t\t\t\t\t\"total\": 8800.0,\r\n\t\t\t\t\t\"vata\": 800.0,\r\n\t\t\t\t\t\"amount\": 8000.0\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/invoice/integration/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"integration",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xác nhận đẩy giao dịch thành công",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":{  \r\n        \"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n        },\r\n        \"transProcessDate\": \"2024-05-24\"\r\n\t}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.14.122.40:8096/eInvoice/ws/invoice/response-trans/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"14",
+						"122",
+						"40"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"invoice",
+						"response-trans",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.15.68.103:8096/eInvoice/ws/user/v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\": {\r\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n\t},\r\n    \"staff\": [\r\n    {\r\n\t \"branchCode\": \"168\",\r\n\t \"fullName\": \"Ngô Thanh Hằng\",\r\n\t \"position\": \"Nhân viên\",\r\n\t \"email\": \"HangNT118@fpt.com.vn\",\r\n\t \"staffID\": \"HangNT118\",\r\n\t \"account\": \"hangnt118\",\r\n\t \"isActive\": \"True\",\r\n\t \"group\": \"4\"\r\n\t}\r\n           ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/user/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"user",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.15.68.103:8096/eInvoice/ws/company/v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"user\":{  \r\n\t\t\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\r\n\t\t\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\r\n                },\r\n\t\t\"branch\": [\r\n\t\t{\r\n\t\t\t\"branchCode\": \"501\",\r\n\t\t\t\"legalName\": \"Chi nhánh Thăng Long 2\",\r\n\t\t\t\"taxCode\": \"0300608092-501\",\r\n\t\t\t\"email\": \"CN_thanglong@hdb.com.vn\",\r\n\t\t\t\"phoneNumber\": \"024 38525595\",\r\n\t\t\t\"addressLine\": \"131,DUONG 25/04,P.BACH DANG,TP.HA LONG, QUANG NINH\",\r\n\t\t\t\"parentID\": \"001\",\r\n\t\t\t\"isActive\": \"True\",\r\n\t\t\t\"province\": \"01\"\r\n\t\t}\r\n\t]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:8096/eInvoice/ws/company/v1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "8096",
+					"path": [
+						"eInvoice",
+						"ws",
+						"company",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test ký số",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": 2821764\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:3333/ext/signxml",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "3333",
+					"path": [
+						"ext",
+						"signxml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test ký số Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJoZGIiLCJmbiI6Ik5nw6JuIEjDoG5nIEhEIiwib3UiOjE1NTIsIm9uIjoiRlBUIC0gS0nhu4JNIFRI4busIEjEkMSQVCBLSMOUTkcgTcODIDIgNzgiLCJ0YXhjb2xkIjoiMDEwNDEyODU2NS05OTgiLCJ0YXhjIjoiMDEwNDEyODU2NS05OTgiLCJlbnQiOiJoZGIiLCJ1IjoxNTUyLCJzZXJpYWxfZ3JhbnQiOjEsImxkYXBfcHJpdmF0ZSI6MCwicm9sZSI6WzEsMiwzLDQsNSw2LDcsOCw5LDEwLDExLDEyLDEzLDE0LDM3LDQyLDQzLDQ3LDQ4XSwicGF0aCI6WyIvb3VzIiwiL2VkaSIsIi9lbWEiLCIvZXRlIiwiL3VzZSIsIi9hZHMiLCIvY29sIiwiL2R0bCIsIi94bHMiLCIvZmxkIiwiL3N5c2xvZyIsIi9ncm8iLCIvc3RtIiwiL2J0aCIsIi9zdGEiLCIvaG9tIiwiL3RvayIsIi9jYXQiLCIvcG9yIiwiL3BrYSIsIi9vcmciLCIvcGduIiwiZ25zIiwiL2V4YyIsIi9sb2MiLCIvZ25zIiwiL3BleCIsIi9zZXIiLCIvdGJxIiwiL3BzZSIsIi9pbnYiLCIvc2VhIiwiL3NlcSIsIi9hcHAiLCIvc2F2IiwiL3NpZyIsIi9ycHQiLCIvYWRqIiwiL3JlcCIsIi9pY2EiLCIvaXN0IiwiL2l3YyIsIi9zYXAiLCIvc2NhIiwiL3NkYSIsbnVsbCwiL3RpbSIsIi9zdGciXSwiaWF0IjoxNjcxMDc2OTAxLCJleHAiOjE2NzExNjMzMDF9.VKeUgPQ9y5K-vjiy1Ry2esjhwUsbKNyjXxwkYSqqPvo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"tax\": [\r\n\t\t{\r\n\t\t\t\"amt\": 8000,\r\n\t\t\t\"vat\": 800,\r\n\t\t\t\"vrn\": \"10%\",\r\n\t\t\t\"vrt\": 10,\r\n\t\t\t\"amtv\": 8000,\r\n\t\t\t\"vatv\": 800\r\n\t\t}\r\n\t],\r\n\t\"name\": \"HÓA ĐƠN GIÁ TRỊ GIA TĂNG\",\r\n\t\"items\": [\r\n\t\t{\r\n\t\t\t\"vrt\": 10,\r\n\t\t\t\"line\": 1,\r\n\t\t\t\"code\": \"\",\r\n\t\t\t\"name\": \"CN-CT DI NGOAIHT-CUNG DB-DIEN TU\",\r\n\t\t\t\"amount\": 8000,\r\n\t\t\t\"quantity\": 1,\r\n\t\t\t\"vrn\": \"10%\",\r\n\t\t\t\"vat\": 800,\r\n\t\t\t\"total\": 8800,\r\n\t\t\t\"c1\": \"2019-09-01 12:10:00\"\r\n\t\t}\r\n\t],\r\n\t\"c0\": \"2\",\r\n\t\"sname\": \"FPT - KIỂM THỬ HĐĐT KHÔNG MÃ 2 78\",\r\n\t\"saddr\": \"Tầng 22 tòa nhà Keangnam Landmark72, E6 đường Phạm Hùng, - Phường Mễ Trì - Quận Nam Từ Liêm - Hà Nội. 2\",\r\n\t\"stel\": \"0981946277\",\r\n\t\"ou\": 1552,\r\n\t\"uc\": \"api\",\r\n\t\"systemCode\": \"0104128565-998\",\r\n\t\"branchCode\": \"0104128565-998\",\r\n\t\"source\": \"SYMBOLS\",\r\n\t\"acctype\": \"2\",\r\n\t\"transno\": \"2022121300000000000511111ssss113\",\r\n\t\"processdate\": \"2022-12-13\",\r\n\t\"sid\": \"2022121300000000000511111ssss115\",\r\n\t\"bname\": \"VI THI THA **\",\r\n\t\"baddr\": \"17.10 T18  , ,**,** ***, *****\",\r\n\t\"btel\": \"\",\r\n\t\"bmail\": \"\",\r\n\t\"paym\": \"TM/CK\",\r\n\t\"curr\": \"VND\",\r\n\t\"exrt\": 1,\r\n\t\"type\": \"01GTKT\",\r\n\t\"aun\": 2,\r\n\t\"bacc\": \"005704005004402\",\r\n\t\"sumv\": 8000,\r\n\t\"sum\": 8000,\r\n\t\"vatv\": 800,\r\n\t\"vat\": 800,\r\n\t\"totalv\": 8800,\r\n\t\"total\": 8800,\r\n\t\"stax\": \"0104128565-998\",\r\n\t\"form\": \"1\",\r\n\t\"serial\": \"K22THP\",\r\n\t\"idt\": \"2022-12-13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.15.68.103:3333/ext/inv/posthd",
+					"protocol": "http",
+					"host": [
+						"10",
+						"15",
+						"68",
+						"103"
+					],
+					"port": "3333",
+					"path": [
+						"ext",
+						"inv",
+						"posthd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

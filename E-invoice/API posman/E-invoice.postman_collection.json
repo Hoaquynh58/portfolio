@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "23f9492b-771b-4313-886f-6232e795f69e",
+		"name": "E-invoice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46019057",
+		"_collection_link": "https://quynhhh-364232.postman.co/workspace/QuynhHH's-Workspace~b94cd642-a380-46fb-8473-06f896923416/collection/46019057-23f9492b-771b-4313-886f-6232e795f69e?action=share&source=collection_link&creator=46019057"
+	},
+	"item": [
+		{
+			"name": "testAPI",
+			"item": [
+				{
+					"name": "Hóa đơn GTGT",
+					"item": [
+						{
+							"name": "Tạo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tạo+Duyệt",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Thay thế hóa đơn",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Điều chỉnh hóa đơn",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hóa đơn MTT",
+					"item": [
+						{
+							"name": "Tạo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tạo+Duyệt",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chứng từ",
+					"item": [
+						{
+							"name": "Tạo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tạo+Duyệt",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Thay thế",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Điều chỉnh",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user\": {\n\t\t\"username\": \"gPLMYTEamvWc8tmvQ7BF8w==\",\n\t\t\"password\": \"sZVxXiGFv55JB2xOYc2Osw==\"\n\t},\n\t\"companyBuyer\": [\n\t\t{\n\t\t\t\"displayName\": \"O LA LA\",\n\t\t\t\"addressLine\": \"KEANGNAM\",\n\t\t\t\"buyerCode\": \"FPT05\",\n\t\t\t\"email\": null,\n\t\t\t\"phoneNumber\": null,\n\t\t\t\"taxCode\": \"0100230801-001 R.C.S12346\",\n\t\t\t\"customerID\": null,\n\t\t\t\"customerType\": \"DN\",\n\t\t\t\"messengeType\": null\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.15.68.103:8096/eInvoice/ws/buyer/v1",
+									"protocol": "http",
+									"host": [
+										"10",
+										"15",
+										"68",
+										"103"
+									],
+									"port": "8096",
+									"path": [
+										"eInvoice",
+										"ws",
+										"buyer",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
