@@ -1,0 +1,3 @@
+Link truy cập Code AlphaCinema
+- Backend: https://github.com/minhhai044/AlphaCinema.git
+- Frontend: https://github.com/hoanganh6789/alpha-cinema.git
